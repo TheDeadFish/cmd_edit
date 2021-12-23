@@ -147,7 +147,7 @@ void openFiles(HWND hwnd)
 		change_flag = TRUE;
 		while(*src) {
 			TCHAR* dst = ofn.lpstrFile+ofn.nFileOffset;
-			while(*dst++ = *src++);
+			while((*dst++ = *src++));
 			append_string(hwnd, ofn.lpstrFile);
 		}
 
